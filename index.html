@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is an awesome BuildHub website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulidHub</title>
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- css file -->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <div id="small-nav">
+       <div class="container">
+        <div class="left-side">
+            <ul>
+                <li><span><i class="far fa-clock"></i></span> 9.30 AM - 5.30PM SUN-MON</li>
+                <li><span><i class="fas fa-envelope"></i> harunorrahid1178@gmail.com</span></li>
+                <li><span><i class="fas fa-phone-alt"></i> 01797533502</span></li>
+            </ul>
+        </div>
+        <div class="right-side">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </div>
+       </div>
+    </div>
+    <!-- hero -->
+    <header id="hero">
+        <div class="container">
+            <nav>
+                <div class="row">
+                    <div class="logo">
+                        <a href="#"><img src="resources/img/logo.png" alt=""></a>
+                    </div>
+                    <div class="nav-item ml-auto">
+                        <ul>
+                            <li><a href="#hero">home</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">course</a></li>
+                            <li><a href="#">get a quote</a></li>
+                        </ul>
+                    </div>
+                    <div class="mobile-nav ml-auto">
+                        <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+                        <div class="overlay" id="myNav">
+                            <span onclick="closeNav()"><i class="fas fa-times"></i></span>
+                            <div class="overlay-content">
+                                <ul>
+                                    <li><a onclick="closeNav()" href="#hero">home</a></li>
+                                    <li><a onclick="closeNav()" href="#services">services</a></li>
+                                    <li><a onclick="closeNav()" href="#">about</a></li>
+                                    <li><a onclick="closeNav()" href="#">blog</a></li>
+                                    <li><a onclick="closeNav()" href="#">contact</a></li>
+                                    <li><a onclick="closeNav()" href="#">course</a></li>
+                                    <li><a onclick="closeNav()" href="#">get a quote</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- slider -->
+        <div id="slider1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#slider1" data-slide-to="0"></li>
+                <li data-target="#slider1" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img src="resources/css/img/slider-bg-01.jpg" class="d-block img-fluid" alt="carousel photo">
+                    <div class="carousel-caption">
+                        <h5 data-aos="fade-up" data-aos-duration="1000">General contacting</h5>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">build everythig you need</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ullam asperiores facere tenetur dolorum laudantium!</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-full active" data-aos="fade-right" data-aos-duration="1000"><span></span> contact us</a>
+                            <a href="#" class="btn btn-full" data-aos="fade-left" data-aos-duration="1000"><span></span> free queit</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="resources/css/img/slider-bg-03.jpg" class="d-block img-fluid" alt="carousel photo">
+                    <div class="carousel-caption">
+                        <h5 data-aos="fade-up" data-aos-duration="1000">General contacting</h5>
+                        <h1 data-aos="fade-up" data-aos-duration="1000">build everythig you need</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ullam asperiores facere tenetur dolorum laudantium!</p>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-full active" data-aos="fade-right" data-aos-duration="1000"><span></span> contact us</a>
+                            <a href="#" class="btn btn-full" data-aos="fade-left" data-aos-duration="1000"><span></span> free queit</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#slider1" class="carousel-control-prev" data-slide="prev">
+                <span><i class="fas fa-backward"></i></span>
+            </a>
+            <a href="#slider1" class="carousel-control-next" data-slide="next">
+                <span><i class="fas fa-forward"></i></span>
+            </a>
+        </div>
+    </header>
+<!-- services section -->
+<section id="services" class="waypoint-nav">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="card-body">
+                        <img src="resources/img/a01.png" alt="">
+                        <h3>CONSULTANT & PREPARATION</h3>
+                        <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="card-body">
+                        <img src="resources/img/a02.png" alt="">
+                        <h3>CONSULTANT & PREPARATION</h3>
+                        <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="card-body">
+                        <img src="resources/img/a03.png" alt="">
+                        <h3>CONSULTANT & PREPARATION</h3>
+                        <p>Mauris mattis auctor tellus imperdiet eu ut imperdiet tellus, imperdiet ut</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about us section -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mt-5" data-aos="fade-right" data-aos-duration="3000">
+                <h4>about us !</h4>
+                <h2 class="my-3">WE BELIEVE IN THE POWER OF GREAT IDEAS.</h2>
+                <p>Rorem ipsum dolor sit amet, consectetur adipisicing elit, sed doklyeiusm tempor incididunt ut labore etry of the siely.</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Quisque Placereat Mnetur Fermnatu nussey</li>
+                    <li><i class="fas fa-check-circle"></i> Quisque Placereat Mnetur Fermnatu nussey</li>
+                    <li><i class="fas fa-check-circle"></i> Quisque Placereat Mnetur Fermnatu nussey</li>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-full active"><span></span> learn more</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-sm-6 mt-5"  data-aos="zoom-in" data-aos-duration="3000">
+                <img class="d-block img-fluid" src="resources/img/about-bg.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- price section -->
+<section id="price">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>PRICE PLAN</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-5"  data-aos="fade-right" data-aos-duration="3000">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Start</h3>
+                        <h2>$69.5</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Build with advance business</li>
+                            <li><i class="fas fa-check"></i> Customizing to builder</li>
+                            <li><i class="fas fa-check"></i> Best agency market</li>
+                            <li><i class="fas fa-check"></i> Customer Service</li>
+                            <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
+                            <li><i class="fas fa-check"></i> Unlimited Project</li>
+                            <li><i class="fas fa-check"></i> Build with longer terms</li>
+                        </ul>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-full active"><span></span> get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5" data-aos="zoom-in" data-aos-duration="3000">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Start</h3>
+                        <h2>$69.5</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Build with advance business</li>
+                            <li><i class="fas fa-check"></i> Customizing to builder</li>
+                            <li><i class="fas fa-check"></i> Best agency market</li>
+                            <li><i class="fas fa-check"></i> Customer Service</li>
+                            <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
+                            <li><i class="fas fa-check"></i> Unlimited Project</li>
+                            <li><i class="fas fa-check"></i> Build with longer terms</li>
+                        </ul>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-full active"><span></span> get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5" data-aos="fade-left" data-aos-duration="3000">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Start</h3>
+                        <h2>$69.5</h2>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Build with advance business</li>
+                            <li><i class="fas fa-check"></i> Customizing to builder</li>
+                            <li><i class="fas fa-check"></i> Best agency market</li>
+                            <li><i class="fas fa-check"></i> Customer Service</li>
+                            <li><i class="fas fa-check"></i> Up to 1000 Worker</li>
+                            <li><i class="fas fa-check"></i> Unlimited Project</li>
+                            <li><i class="fas fa-check"></i> Build with longer terms</li>
+                        </ul>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-full active"><span></span> get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- project section -->
+<section id="project">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>MORE FROM US</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="resources/img/service-item1.jpg" alt="">
+                    <div class="card-text">
+                        <h3>PROJECT DEADLINE</h3>
+                        <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="resources/img/service-item2.jpg" alt="">
+                    <div class="card-text">
+                        <h3>PROJECT DEADLINE</h3>
+                        <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="resources/img/service-item3.jpg" alt="">
+                    <div class="card-text">
+                        <h3>PROJECT DEADLINE</h3>
+                        <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                    <img src="resources/img/service-item4.jpg" alt="">
+                    <div class="card-text">
+                        <h3>PROJECT DEADLINE</h3>
+                        <p>Ut et congue augue. Maecenas fermentum vel ante a aliquam. Etiam viverra maximus</p>
+                        <a href="#" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Quality section -->
+<section id="quality">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>BEST QUALITY STELL</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mt-5"  data-aos="zoom-in" data-aos-duration="3000">
+                <img src="resources/img/our-project.jpg" class="d-block img-fluid" alt="">
+            </div>
+            <div class="col-md-6 mt-5">
+                <div class="quality-text">
+                    <h2>WORK WITH OUR TEAMS</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet. Aliquam erat volutpat. Suspendisse vulputate porttitor condimentum. Proin viverra orci a leo suscipit placerat. Sed feugiat posuere semper. Cras vitae mi erat</p>
+                    <ul>
+                        <li><i class="fas fa-chevron-right"></i> Building Quality</li>
+                        <li><i class="fas fa-chevron-right"></i> Honest Advisors</li>
+                        <li><i class="fas fa-chevron-right"></i> 24/1week Supports</li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-full active"><span></span> get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- product section -->
+<section id="product">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>BEST QUALITY STELL</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s01.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-effect" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s02.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s03.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s04.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card card-effect" data-aos="zoom-in" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s05.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                    <div class="card-body">
+                        <div class="product-box">
+                            <img src="resources/img/s06.png" alt="">
+                            <h4>ARCHITETURE</h4>
+                            <p>Rorem ipsum dolor sit ameto dey teyeryconsecteadipisicing elit, sed do.</p>
+                            <a href="#" class="learn-more-btn">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- feature section -->
+<section id="feature">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>EXPLORE THE FEATURES</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="resources/img/feature-01.jpg" alt="">
+                    <div class="card-body">
+                        <div class="feature-box">
+                            <h5>EXPLORE THE FEATURES</h5>
+                            <h4>INTERIOR DESIGN</h4>
+                            <p>Rorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incutey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card" data-aos="zoom-in" data-aos-duration="3000">
+                    <img src="resources/img/feature-02.jpg" alt="">
+                    <div class="card-body">
+                        <div class="feature-box">
+                            <h5>EXPLORE THE FEATURES</h5>
+                            <h4>CONSTRUCTION</h4>
+                            <p>Rorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incutey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-5">
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                    <img src="resources/img/feature-03.jpg" alt="">
+                    <div class="card-body">
+                        <div class="feature-box">
+                            <h5>EXPLORE THE FEATURES</h5>
+                            <h4>BUILDING REPAIR</h4>
+                            <p>Rorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor incutey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Tream section -->
+<section id="tream">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>MEET OUR TEAM</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="800">
+                    <div class="tream-info">
+                        <img src="resources/img/team-01.jpg" class="d-block img-fluid" alt="">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h4>JONH WELSON</h4>
+                        <p>Civil Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="tream-info">
+                        <img src="resources/img/team-02.jpg" class="d-block img-fluid" alt="">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h4>MOHAMMAD ZIYAUL</h4>
+                        <p>Civil Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="2000">
+                    <div class="tream-info">
+                        <img src="resources/img/team-03.jpg" class="d-block img-fluid" alt="">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h4>RASALINA DE WILAM</h4>
+                        <p>Civil Engineer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <div class="tream-info">
+                        <img src="resources/img/team-04.jpg" class="d-block img-fluid" alt="">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h4>JONH WELSON</h4>
+                        <p>Civil Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- count section -->
+<section id="count" data-aos="zoom-in" data-aos-duration="3000">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <h2>580k</h2>
+                <h5>complete project</h5>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <h2>560k</h2>
+                <h5>Raning Project</h5>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <h2>609k</h2>
+                <h5>Best project</h5>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5">
+                <h2>380k</h2>
+                <h5>Work Going On</h5>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- news section -->
+<section id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section-title">
+                    <h2>OUR LATEST NEWS</h2>
+                    <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet Phasellus tellus tellus, imperdiet ut imperdiet eu</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mt-5">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <img src="resources/img/blog-grid-1.jpg" alt="">
+                    <div class="card-body">
+                        <span>11 Sep, 2019</span>
+                        <h5>WE WORK HARD TO BUILD</h5>
+                        <p>Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</p>
+                        <a href="#" class="learn-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5">
+                <div class="card" data-aos="zoom-in" data-aos-duration="3000">
+                    <img src="resources/img/blog-grid-2.jpg" alt="">
+                    <div class="card-body">
+                        <span>11 Sep, 2019</span>
+                        <h5>WE WORK HARD TO BUILD</h5>
+                        <p>Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</p>
+                        <a href="#" class="learn-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-5" data-aos="fade-left" data-aos-duration="3000">
+                <div class="card">
+                    <img src="resources/img/blog-grid-3.jpg" alt="">
+                    <div class="card-body">
+                        <span>11 Sep, 2019</span>
+                        <h5>WE WORK HARD TO BUILD</h5>
+                        <p>Aliquam erat volutpat. Suspendisse Suspen vulput port condimentum. vulput porttitor condimentum.</p>
+                        <a href="#" class="learn-more-btn">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- subscribe section -->
+<section id="sub">
+    <div class="container">
+        <div class="sub-box" data-aos="zoom-in" data-aos-duration="3000">
+            <div class="row">
+                <div class="col-lg-4 mt-5">
+                    <h3>SUBSCRIBE NOW</h3>
+                    <div class="sub-text">
+                        <form action="#" method="POST">
+                            <input type="text" placeholder="Enter Your Email">
+                            <input type="button" value="Submit">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h3>CONTACTS NOW</h3>
+                    <div class="sub-text">
+                        <p>Call Us : +(98) 888 7777</p>
+                        <p>Email Us : sample-email@example.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h3>FOLLOW US</h3>
+                    <div class="sub-text">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer section -->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 mt-5" data-aos="fade-right" data-aos-duration="3000">
+                <h3>ABOUT US</h3>
+                <p>Mauris mattis auctor cursus. Phasellus tellus tellus, imperdiet ut imperdiet eu, iaculis a sem. Donec vehicula luctus nunc in laoreet</p>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5" data-aos="fade-up" data-aos-duration="3000">
+                <h3>CONTACT US</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-home"></i> <p>Raffles Avenue, Singapore Flyer, Singapore</p></li>
+                    <li><i class="fas fa-phone-volume"></i> <p>+(98) 888 7777 <br> +(12) 999 22333</p></li>
+                    <li><i class="fas fa-envelope"></i> <p>sample-email@example.com <br>
+                        myinfo@example.com</p></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5" data-aos="fade-up" data-aos-duration="3000">
+                <h3>USEFULL LINKS</h3>
+                <ul class="short-link">
+                    <li><i class="fas fa-chevron-right"></i> <a href="#">home</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#">page</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#">services</a></li>
+                    <li><i class="fas fa-chevron-right"></i> <a href="#">project</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-5" data-aos="fade-left" data-aos-duration="3000">
+                <h3>RECENT POST</h3>
+                <div class="footer-col-box">
+                    <div class="footer-col-sub-box">
+                        <h4>25</h4>
+                        <p>april <br> 2020</p>
+                    </div>
+                    <div class="footer-col-sub-text">
+                        <span>WHERE WE'RE STANDING RIGHT NOW</span> <br><br>
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-sms"></i> 29</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="footer-col-sub-box">
+                        <h4>25</h4>
+                        <p>april <br> 2020</p>
+                    </div>
+                    <div class="footer-col-sub-text">
+                        <span>WHERE WE'RE STANDING RIGHT NOW</span> <br><br>
+                        <span><i class="fas fa-user"></i> By Admin</span>
+                        <span><i class="fas fa-sms"></i> 29</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- js file -->
+    <!-- bootstrap file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- vendors file -->
+    <script src="vendors/js/modernizr-3.11.2.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="resources/js/index.js"></script>
+</body>
+</html>
